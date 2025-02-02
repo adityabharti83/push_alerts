@@ -12,8 +12,10 @@
 
 This package was initially developed as part of my project, **Wheels to Your Doorsteps**, which required a robust notification system. Instead of creating a solution specific to the project, I decided to generalize it into a reusable package for broader use.
 
+🚀 **This package is currently in the publishing process and will be available soon!** Stay tuned for updates.
+
 ## Installation
-Install the package using pip:
+Once available, you will be able to install the package using pip:
 
 ```sh
 pip install push-alerts
