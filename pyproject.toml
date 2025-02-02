@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "push-alerts"
+version = "0.1.0"
+description = "A package to send push notifications via various services like Firebase, Email, SMS, etc."
+dependencies = [
+    "firebase-admin",
+    "requests",
+    "twilio",
+    "python-telegram-bot",
+    "pywhatkit",
+]
+
+[tool.setuptools]
+packages = ["push_alerts"]
+
+[tool.setuptools.package-data]
+"push_alerts" = ["data/*"]
+
+[tool.setuptools.scripts]
+push-alerts-cli = "push_alerts.cli:main"
