@@ -1,24 +1,24 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "push-alerts"
 version = "0.1.0"
-description = "A package to send push notifications via various services like Firebase, Email, SMS, etc."
+description = "A Python package for sending push notifications via Firebase, Email, SMS, WhatsApp, and Telegram."
+authors = [
+    {name = "Aditya Bharti", email = "adityabharti6088@gmail.com"}
+]
+license = {text = "MIT"}
 dependencies = [
     "firebase-admin",
     "requests",
     "twilio",
+    "fastapi",
     "python-telegram-bot",
-    "pywhatkit",
+    "python-dotenv"
 ]
 
-[tool.setuptools]
-packages = ["push_alerts"]
-
-[tool.setuptools.package-data]
-"push_alerts" = ["data/*"]
-
-[tool.setuptools.scripts]
-push-alerts-cli = "push_alerts.cli:main"
+[project.urls]
+Homepage = "https://github.com/adityabharti83/push_alerts.git"
+Repository = "https://github.com/adityabharti83/push_alerts.git"

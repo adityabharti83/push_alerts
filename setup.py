@@ -4,7 +4,7 @@ setup(
     name="push-alerts",
     version="0.1.0",
     description="A Python package for multi-channel notifications",
-    author="Your Name",
+    author="Aditya Bharti",
     packages=find_packages(),
     install_requires=[
         "firebase-admin",
